@@ -1,4 +1,4 @@
-﻿using CompanyCLI.UI;
+using CompanyCLI.UI;
 using Spectre.Console;
 
 namespace CompanyCLI.Core;
@@ -10,6 +10,7 @@ public class App
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         Console.InputEncoding = System.Text.Encoding.UTF8;
 
+        await StartupUI.ShowAsync();
         await DashboardUI.ShowAsync();
     }
 }
